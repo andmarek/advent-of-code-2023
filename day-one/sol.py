@@ -19,7 +19,6 @@ def part_one():
             if first_digit and last_digit:
                 numbers_on_lines.append(int(calibration_number))
 
-            print(numbers_on_lines)
         return sum(numbers_on_lines)
 
 def part_two(): 
@@ -56,14 +55,13 @@ def part_two():
                             else:
                                 continue
             nums_on_lines.append(nums_on_line)
-        print(nums_on_lines)
         total = 0
         for line in nums_on_lines:
             total += int(line[0] + line[-1])
         return total
 
 print("Part One")
-#print(part_one())
+print(part_one())
 
 print("Part Two")
 print(part_two())
